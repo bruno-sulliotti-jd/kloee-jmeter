@@ -4,7 +4,7 @@
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Kloee TestPlan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments">
           <elementProp name="target.environment" elementType="Argument">
@@ -231,7 +231,7 @@ vars.put(&quot;bearer_token2&quot;, props.get(&quot;global_bearer2&quot;));</str
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">4</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1499721017000</longProp>
         <longProp name="ThreadGroup.end_time">1499721017000</longProp>
@@ -1012,40 +1012,6 @@ vars.put(&quot;bearer_token2&quot;, props.get(&quot;global_bearer2&quot;));</str
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-            </value>
-          </objProp>
-          <stringProp name="filename"></stringProp>
-        </ResultCollector>
-        <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
@@ -1089,8 +1055,8 @@ vars.put(&quot;bearer_token2&quot;, props.get(&quot;global_bearer2&quot;));</str
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
         <longProp name="ThreadGroup.start_time">1500997274000</longProp>
         <longProp name="ThreadGroup.end_time">1500997274000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -6579,6 +6545,40 @@ vars.put(&quot;bearer_token2&quot;, props.get(&quot;global_bearer2&quot;));</str
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
         <Summariser guiclass="SummariserGui" testclass="Summariser" testname="Generate Summary Results" enabled="true"/>
         <hashTree/>
       </hashTree>
@@ -9910,7 +9910,7 @@ vars.put(&quot;bearer_token2&quot;, props.get(&quot;global_bearer2&quot;));</str
         <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Argument Test Cases 2nd Account" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="-1227702913">WorkBench</stringProp>
-            <stringProp name="2114181051">Kloee TeamCity tests</stringProp>
+            <stringProp name="-2004378963">Kloee TestPlan</stringProp>
             <stringProp name="-1138777750">Argument Test Cases 2</stringProp>
             <stringProp name="390982201">Andrey account Test Cases</stringProp>
           </collectionProp>
